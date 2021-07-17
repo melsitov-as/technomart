@@ -1,0 +1,51 @@
+.breadcrumbs {
+  width: 941px;
+  margin: 0 auto;
+  padding-top: 21px;
+  padding-bottom: 19px;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.breadcrumbs__item + .breadcrumbs__item {
+  margin-left: 41px;
+  position: relative;
+}
+
+.breadcrumbs__item + .breadcrumbs__item::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 3px;
+  left: -25px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../../img/breadcrumbs-arrow.png");
+}
+
+.breadcrumbs__item-link {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-black;
+}
+
+.breadcrumbs__item-current {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: $basic-black;
+  text-transform: uppercase;
+}

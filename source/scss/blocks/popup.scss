@@ -1,0 +1,151 @@
+.popup {
+  display: none;
+  position: absolute;
+  width: 620px;
+  height: 430px;
+  top: 2369px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, $basic-red 7px, $basic-white 7px, $basic-white 318px, $popup-grey 318px);
+  box-shadow: 0 4px 20px 0 $transparent-black-3;
+}
+
+.popup__close-button {
+  position: absolute;
+  top: 21px;
+  right: 12px;
+}
+
+.popup__item {
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 459px;
+  margin: 0 auto;
+  padding-top: 47px;
+}
+
+.popup__username-label {
+  order: 1;
+  margin-right: 166px;
+  margin-bottom: 11px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.popup__email-label {
+  order: 2;
+  margin-bottom: 11px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.popup__username-input {
+  order: 3;
+  width: 217px;
+  margin-bottom: 14px;
+  padding-left: 8px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 2px solid $popup-input-grey;
+  box-sizing: border-box;
+}
+
+.popup__username-input::placeholder {
+  color: $text-grey;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.popup__email-input {
+  order: 4;
+  width: 220px;
+  margin-left: 20px;
+  padding-left: 11px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 2px solid $popup-input-grey;
+  box-sizing: border-box;
+}
+
+.popup__email-input::placeholder {
+  color: $text-grey;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.popup__textarea-label {
+  order: 5;
+  margin-bottom: 10px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.popup__textarea {
+  order: 6;
+  width: 460px;
+  height: 114px;
+  margin-bottom: 64px;
+  padding-top: 4px;
+  padding-left: 9px;
+  border: 2px solid $popup-input-grey;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.popup__textarea::placeholder {
+  color: $text-grey;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+  
+.popup__submit-button {
+  order: 7;
+  width: 460px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $basic-red;
+  display: block;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.popup__submit-button:hover {
+  background-color: $hover-red;
+}
+
+.popup__submit-button:active {
+  background-color: $active-red;
+}

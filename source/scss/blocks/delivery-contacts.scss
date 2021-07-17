@@ -1,0 +1,176 @@
+.delivery-contacts {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+
+.delivery-contacts__container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.delivery {
+  width: 629px;
+}
+
+.delivery__title {
+  margin: 0 0 24px 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.delivery__description {
+  margin: 0 0 28px 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.delivery__text {
+  margin: 0 0 2px 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.delivery__list {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.delivery__list-item {
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 12px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.delivery__list-item::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  background-color: $basic-red;
+}
+
+.delivery__more-button {
+  width: 220px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  display: inline-block;
+  vertical-align: baseline;
+  background-color: $basic-red;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-decoration: none;
+}
+
+.delivery__more-button:hover {
+  background-color: $hover-red;
+}
+
+.delivery__more-button:active {
+  background-color: $active-red;
+}
+
+.contacts {
+  width: 311px;
+  padding-left: 30px;
+}
+
+.contacts__title {
+  margin: 0 0 25px 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.contacts__text {
+  margin: 0 0 32px 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.contacts__map-link {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.contacts__map {
+  width: 300px;
+  height: 158px;
+}
+
+.contacts__button {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 300px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-white;
+  background-color: $basic-red;
+  border: none;
+  cursor: pointer;
+}
+
+.contacts__button:hover {
+  background-color: $hover-red;
+}
+
+.contacts__button:active {
+  background-color: $active-red;
+}
+
+

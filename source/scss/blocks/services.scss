@@ -1,0 +1,158 @@
+.services {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: $basic-grey;
+  padding-top: 65px;
+  padding-bottom: 68px;
+}
+
+.services__container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.sevices__title {
+  margin: 0 0 24px 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.services__text {
+  margin: 0 0 45px 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.services__items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.services__accordion-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 240px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.services__accordion-control {
+  background-color: $text-dark-blue;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: $basic-white;
+  width: 240px;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  letter-spacing: 1px;
+  box-shadow: inset 0 -1px 1px 0 $transparent-black-1,
+    inset 0 1px 1px 0 $transparent-white-1;
+}
+
+.services__accordion-input:checked + .services__accordion-control  {
+  background-color: $basic-white;
+  color: $text-dark-blue;
+}
+
+.services__accordion-input:hover + .services__accordion-control {
+  background-color: $basic-dark-blue;
+}
+
+.services__accordion-input:checked:hover + .services__accordion-control  {
+  background-color: $basic-white;
+  color: $text-dark-blue;
+}
+
+.services__accordion-item {
+  width: 700px;
+  padding-top: 25px;
+  padding-left: 80px;
+  box-shadow: -8px 0 8px -8px $transparent-black-1;
+}
+
+.services__accordion-item--delivery {
+  background: url("../../img/delivery-background.png") 218px 36px no-repeat;
+  padding-bottom: 62px;
+}
+
+.services__accordion-item--guarantee {
+  background: url("../../img/guarantee-bakground.png") 307px 28px no-repeat;
+  padding-bottom: 38px;
+}
+
+.services__accordion-item--credit {
+  background: url("../../img/credit-background.png") 231px 10px no-repeat; 
+  padding-bottom: 43px;
+}
+
+.services__accordion-item-title {
+  margin: 0 0 27px 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-dark-blue;
+}
+
+.services__accordion-item-text {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services__accordion-item--credit .services__accordion-item-text {
+  margin-bottom: 27px;
+}
+
+.services__accordion-item-button {
+  display: inline-block;
+  vertical-align: baseline;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: $basic-red;
+  width: 195px;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-white;
+}
+
+.services__accordion-item-button:hover {
+  background-color: $hover-red;
+}
+
+.services__accordion-item-button:active {
+  background-color: $active-red;
+}

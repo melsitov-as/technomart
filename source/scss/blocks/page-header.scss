@@ -1,0 +1,478 @@
+.page-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  background: linear-gradient(to bottom, $basic-dark-blue 42px, $basic-grey 42px);
+}
+
+.page-header__container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.page-header__user-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12px;
+  box-sizing: border-box;
+  width: 220px;
+  height: 47px;
+  background-color: $basic-red;
+  box-shadow: inset 0 -5px 0 0 $transparent-black-1;
+}
+
+.page-header__logo:hover + .page-header__search-wrapper .page-header__search-img g {
+  opacity: 1;
+}
+
+.page-header__logo:hover ~ .page-header__bookmarks-wrapper .page-header__bookmarks-img g{
+  opacity: 1;
+}
+
+.page-header__logo:hover ~ .page-header__cart-wrapper .page-header__cart-img g{
+  opacity: 1;
+}
+
+.page-header__logo:active + .page-header__search-wrapper .page-header__search,
+.page-header__logo:active + .page-header__search-wrapper .page-header__search-img g,
+.page-header__logo:active ~ .page-header__bookmarks-wrapper span,
+.page-header__logo:active ~ .page-header__bookmarks-wrapper .page-header__bookmarks-img g,
+.page-header__logo:active ~ .page-header__cart-wrapper a,
+.page-header__logo:active ~ .page-header__cart-wrapper span,
+.page-header__logo:active ~ .page-header__cart-wrapper .page-header__cart-img g,
+.page-header__logo:active ~ .page-header__checkout-wrapper a {
+  opacity: 0.5;
+}
+
+.page-header__search:active + .page-header__search-img path {
+  fill: $basic-red;
+}
+.page-header__search:active {
+  background-color: $basic-white;
+}
+
+.page-header__search:active::placeholder {
+  color: $basic-black;
+}
+
+.page-header__search-wrapper {
+  width: 200px;
+  margin-left: 10px;
+  height: 42px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.page-header__search-img {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.page-header__search {
+  background-color: transparent;
+  border: none;
+  padding-left: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+}
+
+.page-header__search::placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+}
+
+.page-header__bookmarks-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 136px;
+  height: 42px;
+  margin-left: 86px;
+}
+
+.page-header__bookmarks-img {
+  position: absolute;
+  top: 13px;
+  left: 4px;
+}
+
+.page-header__bookmarks-text{
+  display: inline-block;
+  vertical-align: baseline;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+}
+
+.page-header__bookmarks-num {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 5px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+}
+
+.page-header__cart-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 133px;
+  height: 42px;
+  margin-left: 12px;
+  padding-left: 3px;
+}
+
+.page-header__cart-wrapper--red {
+  background-color: $basic-red;
+}
+
+.page-header__cart-img {
+  position: absolute;
+  top: 9px;
+  left: 11px;
+}
+
+.page-header__cart-img {
+  padding-top: 3px;
+}
+
+.page-header__cart-link {
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: baseline;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+  text-decoration: none;
+}
+
+.page-header__cart-num {
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: baseline;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+}
+
+.page-header__checkout-wrapper {
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $basic-green;
+}
+
+.page-header__checkout-link {
+  text-decoration: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;  
+}
+
+.page-header__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-top: 39px;
+  padding-left: 30px;
+}
+
+.page-header__content-text {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 197px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum Italic", Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $basic-red;
+}
+
+.page-header__contacts {
+  margin-left: 94px;
+  padding-top: 2px;
+}
+
+.page-header__contacts-phone {
+  width: 263px;
+  margin-bottom: 3px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid $basic-white;
+}
+
+.page-header__contacts-phone-img {
+  margin-left: 36px;
+}
+
+.page-header__contacts-phone-link {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 16px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: $basic-red;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+}
+
+.page-header__address {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-dark-blue;
+  text-align: center;
+}
+
+.page-header__login {
+  margin-left: 70px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 121px;
+  height: 45px;
+  background-color: $basic-white;
+  margin-top: 2px;
+}
+
+.page-header__login:hover .page-header__login-img path {
+  fill: $hover-grey;
+}
+
+.page-header__login:active .page-header__login-img path {
+  fill: $popup-input-grey;
+}
+
+.page-header__login:hover span {
+  color: $basic-red;
+}
+
+.page-header__login:active span {
+  color: $popup-input-grey;
+}
+
+.page-header__login-text {
+  margin-left: 8px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: $basic-black;
+}
+
+.page-header__registration {
+  margin-top: 2px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: $basic-black;
+  background-color: $basic-white;
+  text-decoration: none;
+}
+
+.page-header__registration:hover {
+  color: $basic-red;
+}
+
+.page-header__registration:active {
+  color: $popup-input-grey;
+}
+
+.page-header__user-menu {
+  width: 299px;
+  margin-left: 50px;
+  padding-top: 2px;
+}
+
+.page-header__user-account-menu {
+  width: 299px;
+  margin-left: 50px;
+  padding-top: 2px;
+}
+
+
+.page-header__username-wrapper:hover .page-header__username-user-icon path,
+.page-header__username-wrapper:hover .page-header__username-logout-img path {
+  fill: $hover-grey;
+}
+
+.page-header__username-wrapper:active .page-header__username-user-icon path,
+.page-header__username-wrapper:active .page-header__username-logout-img path {
+  fill: $popup-input-grey;
+}
+
+.page-header__username-wrapper:active .page-header__username-text {
+  color: $popup-input-grey;
+}
+
+.page-header__user-menu:hover .page-header__user-orders-link,
+.page-header__user-menu:hover .page-header__user-account-link {
+  color: $basic-red;
+}
+
+.page-header__user-orders-link:hover {
+  color: $basic-red;
+}
+
+.page-header__user-account-link:hover {
+  color: $basic-red;
+}
+
+.page-header__user-orders-link:active {
+  color: $popup-input-grey;
+}
+
+.page-header__user-account-link:active {
+  color: $popup-input-grey;
+}
+
+
+.page-header__username-wrapper {
+  background-color: $basic-white;
+  width: 299px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+
+
+
+.page-header__username-text {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: $basic-black;
+}
+
+.page-header__user-orders-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: $text-dark-blue;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 45px;
+}
+
+.page-header__user-account-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  color: $text-dark-blue;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 28px;
+  position: relative;
+}
+
+.page-header__user-account-link::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: 8px;
+  left: -18px;
+}
+
+.page-header__nav-list {
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0 -5px 0 0 $transparent-black-1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__nav-item a {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: $basic-white;
+  padding: 18px 32px;
+  background-color: $text-dark-blue;
+}
+
+.page-header__nav-item a:hover {
+  background-color: $basic-dark-blue;
+}
+
+.page-header__nav-item a:active span {
+  opacity: 0.5;
+}

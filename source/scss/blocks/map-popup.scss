@@ -1,0 +1,25 @@
+.map-popup {
+  display: none;
+  position: absolute;
+  top: 2369px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 943px;
+  height: 449px;
+  box-shadow: 0 4px 20px 0 $transparent-black-3;
+}
+
+.map-popup__img {
+  width: 943px;
+  height: 449px;
+  margin: 0;
+  padding: 0;
+}
+
+.map-popup__close-button {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 30px;
+  right: 30px;
+}
